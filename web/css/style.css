@@ -1,0 +1,25 @@
+body {
+	background-image: url("/organizer/web/img/background.png");
+}
+
+h1 {
+	font-family: Verdana;
+}
+
+.error {
+	margin-top: 260px;
+	color: red;
+	font-weight: bold;
+}
+
+.msg {
+	font-family: Verdana;
+	margin-top: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.register {
+	position: absolute;
+	margin-left: 1220px;
+}

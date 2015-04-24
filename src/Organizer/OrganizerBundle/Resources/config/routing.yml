@@ -1,0 +1,48 @@
+#
+# Users / Not used
+#
+
+organizer_homepage:
+    path:     /
+    defaults: { _controller: OrganizerBundle:Default:index }
+organizer_homepage_user:
+    path:     /users
+    defaults: { _controller: OrganizerBundle:Users:index }
+organizer_register:
+    path:     /users/register
+    defaults: { _controller: UserBundle:Users:register }
+
+#
+# Taches
+#
+
+organizer_homepage_tache:
+    path:     /taches
+    defaults: { _controller: OrganizerBundle:Taches:index } 
+organizer_create_tache:
+    path:     /taches/create/{projet_id}
+    defaults: { _controller: OrganizerBundle:Taches:create }
+
+#
+# Sous-Taches
+#
+
+organizer_homepage_soustache:
+    path:     /soustaches
+    defaults: { _controller: OrganizerBundle:SousTaches:index }  
+
+#
+# Projets
+#  
+
+organizer_homepage_projet:
+    path:     /projets
+    defaults: { _controller: OrganizerBundle:Projets:index }
+organizer_creer_projet:
+    path:    /projets/create
+    defaults: { _controller: OrganizerBundle:Projets:create }
+organizer_view_project:
+    path:    /projet/{id}
+    defaults: { _controller: OrganizerBundle:Projets:view }
+    requirements:
+        id: \d+

@@ -1,0 +1,10 @@
+{{ id }}
+
+<li><label><b>Nom du projet : </b></label> <b>{{ projet.prjNom }}</b>  </li>
+<li style="padding-left:25px"><label> <b>Description</b> : </label> {{ projet.prjDescription }} </li>
+<li style="padding-left:30px"><label> <b>Cree le</b> : </label> {{ projet.prjCreated|date('Y-m-d H:i:s') }} </li>
+<li style="padding-left:35px"><label> <b>Le projet a commence le</b> :  </label> {{ projet.prjTimelineStartAt|date('Y-m-d H:i:s') }} </li>
+<li style="padding-left:40px"><label> <b>Et finira le</b> : </label> {{ projet.prjTimelineEndAt|date('Y-m-d H:i:s') }}  </li>
+
+
+<a href="{{ path('organizer_create_tache', {'projet_id' : id }) }}"> Ajouter une tache </a>

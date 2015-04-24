@@ -1,0 +1,7 @@
+organizer_user:
+    resource: "@OrganizerUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+organizer:
+    resource: "@OrganizerBundle/Resources/config/routing.yml"
+    prefix:   /
